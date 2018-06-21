@@ -2,6 +2,6 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^datechecker/', include('datechecker.urls')),
+    url('admin', admin.site.urls),
+    url('datechecker', include('datechecker.urls')),
 ]
